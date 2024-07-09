@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src = "home.js"></script>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <h2>Workspace</h2>
+        </div>
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html" onClick = "activeHome()" id ="home">Home</a></li>
+                <li ><a href="customer.html" onClick = "activeCustomer()" id ="customer">Customers</a></li>
+                <li><a href="department.html" onClick = "activeDept()" id ="dept">Departments</a></li>
+                <li><a href="media.html" onClick = "activeMedia()" id ="media">Media</a></li>
+            </ul>
+        </nav>
+        <div class="account">
+            <a href="account.html "onClick = "activeAccount()" id = "account">My Account</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <input type="text" placeholder="Search in Customer">
+            <button class="btn-outline-success" type="submit">Search</button>
+        </div>
+
+        <div class="content">
+            <div class="account-section">
+                <img src="home.png" alt="Profile Picture">
+                <h2>My Account</h2>
+        
+                <label for="name">Name</label>
+                <div>
+                    <input type="text" id="name" value="John Doe" disabled>
+                    <button alt="edit" class="edit-btn" onclick="enableEdit('name')">edit</button>
+                </div>
+        
+                <label for="email">Email</label>
+                <div>
+                    <input type="email" id="email" value="example@gmail.com" disabled>
+                    <button alt="edit" class="edit-btn" onclick="enableEdit('email')">edit</button>
+                </div>
+        
+                <label for="phone">Phone Number</label>
+                <div>
+                    <input type="text" id="phone" value="9134837948" disabled>
+                    <button alt="edit" class="edit-btn" onclick="enableEdit('phone')">edit</button>
+                </div>
+        
+                <label for="dob">Date Of Birth</label>
+                <div>
+                    <input type="text" id="dob" value="July 16, 1999" disabled>
+                    <button alt="edit" class="edit-btn" onclick="enableEdit('dob')">edit</button>
+                </div>
+        
+                <div class="actions">
+                    <button class="save-btn" onclick="saveChanges()">SAVE</button>
+                    <button class="cancel-btn" onclick="cancelChanges()">CANCEL</button>
+                </div>
+            </div>
+        </div>
+    
+        
+            
+
+
+    </div>
+
+    <script src ="home.js"></script>
+</body>
+
+</html>

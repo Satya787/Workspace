@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workspace</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <h2>Workspace</h2>
+        </div>
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html" onClick = "activeHome()" id ="home">Home</a></li>
+                <li class =""><a href="customer.html" onClick = "activeCustomer()" id ="customer">Customers</a></li>
+                <li class =""><a href="department.html" onClick = "activeDept()" id ="dept">Departments</a></li>
+                <li class = ""><a href="media.html" onClick = "activeMedia()" id ="media">Media</a></li>
+            </ul>
+        </nav>
+        <div class="account">
+            <a class = ""href="account.html"onClick = "activeAccount()" id = "account">My Account</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <input type="text" placeholder="Search in Home">
+            <button class="btn-outline-success">🔍</button>
+        </div>
+        <div class="overview">
+            <div class="box green">
+                <h2>New Customers</h2>
+                <p>24</p>
+            </div>
+            <div class="box blue">
+                <h2>Department Activity</h2>
+                <p>434+</p>
+            </div>
+            <div class="box red">
+                <h2>Total Media Size</h2>
+                <p>10 <sub>TB</sub></p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="section">
+                <h2 class ="customer">Customers</h2>
+                <table class ="ctable">
+                    <thead>
+                        <tr >
+                            <th>Customer ID</th>
+                            <th>Department ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Total Media Size</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>JRYT456</td>
+                            <td>UHDSG</td>
+                            <td>JOHN</td>
+                            <td>skadj@gmail.com</td>
+                            <td>2 GB</td>
+                        </tr>
+                        <tr>
+                            <td>JHSAG636</td>
+                            <td>ASDFJ</td>
+                            <td>JANE</td>
+                            <td>skadj@gmail.com</td>
+                            <td>0.4 GB</td>
+                        </tr>
+                        <tr>
+                            <td>ASJHSA77</td>
+                            <td>SAFEF</td>
+                            <td>BOB</td>
+                            <td>skadj@gmail.com</td>
+                            <td>200 GB</td>
+                        </tr>
+                        <tr>
+                            <td>KSAHJK366</td>
+                            <td>AFEEE</td>
+                            <td>MARY</td>
+                            <td>skadj@gmail.com</td>
+                            <td>50 GB</td>
+                        </tr>
+                        <tr>
+                            <td>SAKJHD35</td>
+                            <td>REYER</td>
+                            <td>KARAN</td>
+                            <td>skadj@gmail.com</td>
+                            <td>45 GB</td>
+                        </tr>
+                        <tr>
+                            <td>KKHUASU33</td>
+                            <td>HJHGF</td>
+                            <td>CHRISSY</td>
+                            <td>skadj@gmail.com</td>
+                            <td>500 GB</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="section">
+                <h2 id ="department">Departments</h2>
+                <table class = "dept-table">
+                    <thead>
+                        <tr>
+                            <th>Department ID</th>
+                            <th>Department Incharge</th>
+                            <th>Name</th>
+                            <th>Size</th>
+                            <th>Total Media Size</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>JRYT456</td>
+                            <td>UHDSG</td>
+                            <td>JOHN</td>
+                            <td>23</td>
+                            <td>2 GB</td>
+                        </tr>
+                        <tr>
+                            <td>JHSAG636</td>
+                            <td>ASDFJ</td>
+                            <td>JANE</td>
+                            <td>45</td>
+                            <td>0.4 GB</td>
+                        </tr>
+                        <tr>
+                            <td>ASJHSA77</td>
+                            <td>SAFEF</td>
+                            <td>BOB</td>
+                            <td>76</td>
+                            <td>200 GB</td>
+                        </tr>
+                        <tr>
+                            <td>KSAHJK366</td>
+                            <td>AFEEE</td>
+                            <td>MARY</td>
+                            <td>87</td>
+                            <td>50 GB</td>
+                        </tr>
+                        <tr>
+                            <td>SAKJHD35</td>
+                            <td>REYER</td>
+                            <td>KARAN</td>
+                            <td>76</td>
+                            <td>45 GB</td>
+                        </tr>
+                        <tr>
+                            <td>KKHUASU33</td>
+                            <td>HJHGF</td>
+                            <td>CHRISSY</td>
+                            <td>78</td>
+                            <td>500 GB</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="section">
+                <h2 class ="media">Media</h2>
+                <div class="media-boxes">
+                    <div class="media-box">
+                        <h3>Audio</h3>
+                        <p>14 TB</p>
+                    </div>
+                    <div class="media-box">
+                        <h3>Video</h3>
+                        <p>14 TB</p>
+                    </div>
+                    <div class="media-box">
+                        <h3>Images</h3>
+                        <p>14 TB</p>
+                    </div>
+                    <div class="media-box">
+                        <h3>Files</h3>
+                        <p>14 TB</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src ="home.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="home.js"></script>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <h2>Workspace</h2>
+        </div>
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html" onClick="activeHome()" id="home">Home</a></li>
+                <li><a href="customer.html" onClick="activeCustomer()" id="customer">Customers</a></li>
+                <li><a href="department.html" onClick="activeDept()" id="dept">Departments</a></li>
+                <li><a href="media.html" onClick="activeMedia()" id="media">Media</a></li>
+            </ul>
+        </nav>
+        <div class="account">
+            <a href="account.html " onClick="activeAccount()" id="account">My Account</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <input type="text" placeholder="Search in Customer">
+            <button class="btn-outline-success" type="submit">Search</button>
+        </div>
+
+
+        <div class="section">
+            <h2>Images</h2>
+        </div>
+        <div class="photos">
+            
+            <img src="home.png" alt="image">
+            <img src="home.png" alt="image">
+            <img src="home.png" alt="image">
+            <img src="home.png" alt="image">
+            <img src="home.png" alt="image">
+            <img src="home.png" alt="image">
+            
+            
+        </div>
+
+        <div class="section">
+        <h2>Video</h2>
+        </div>
+        <div class="videos">
+            <video controls>
+                <source src="VID_20231223_210418_567.mp4.mkv" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+
+              <video controls>
+                <source src="VID_20231223_210418_567.mp4.mkv" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+
+              <video controls>
+                <source src="VID_20231223_210418_567.mp4.mkv" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+        </div>
+
+        <div class="section">
+            <h2>Audio</h2>
+        </div>
+        <div class="audios">
+            <audio controls>
+                <source src="WhatsApp Audio 2024-07-09 at 10.40.47.mpeg" type="audio/ogg">
+                Media not supported by browser
+              </audio>
+              <audio controls>
+                <source src="WhatsApp Audio 2024-07-09 at 10.40.47.mpeg" type="audio/ogg">
+                Media not supported by browser
+              </audio>
+              <audio controls>
+                <source src="WhatsApp Audio 2024-07-09 at 10.40.47.mpeg" type="audio/ogg">
+                Media not supported by browser
+              </audio>
+              
+        </div>
+
+
+    </div>
+
+    <script src ="home.js"></script>
+</body>
+
+</html>
